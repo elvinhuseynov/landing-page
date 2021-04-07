@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style/css/main.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a class="logo-container" href="#">
+          <img
+            id="white-logo"
+            class="sticky"
+            src="./public/images/logo-light.png"
+            alt="logo"
+          />
+          <img
+            class="not-sticky"
+            id="dark-logo"
+            src="./public/images/logo-dark.png"
+            alt="logo"
+          />
+        </a>
+
+        <ul class="nav-container desktop-nav">
+          <li class="nav-links"><a href="#">Home</a></li>
+          <li class="nav-links"><a href="#">Features</a></li>
+          <li class="nav-links"><a href="#">Services</a></li>
+          <li class="nav-links"><a href="#">Pricing</a></li>
+          <li class="nav-links"><a href="#">Testimonials</a></li>
+          <li class="nav-links"><a href="#">Start Now</a></li>
+          <li class="button-container">
+            <a href="#"
+              ><span>Contact Us</span>
+              <img
+                class="arrows not-sticky"
+                id="white-arrow"
+                src="./public/images/right-arrow-white.svg"
+                alt="arrow" />
+              <img
+                class="arrows"
+                id="arrow"
+                src="./public/images/right-arrow.svg"
+                alt="arrow"
+            /></a>
+          </li>
+        </ul>
+
+        <div class="nav-mobile">
+          <img
+            onclick="hamburgerMenuFunc()"
+            id="menu-icon"
+            class="sticky"
+            src="./public/images/menu.svg"
+            alt="menu-icon"
+          />
+          <img
+            onclick="hamburgerMenuFunc()"
+            id="menu-icon"
+            class="not-sticky"
+            src="./public/images/menu-pink.svg"
+            alt="menu-icon"
+          />
+
+          <ul class="nav-container" id="hamburger-menu">
+            <li class="nav-links li-active"><a href="#">Home</a></li>
+            <li class="nav-links"><a href="#">Features</a></li>
+            <li class="nav-links"><a href="#">Services</a></li>
+            <li class="nav-links"><a href="#">Pricing</a></li>
+            <li class="nav-links"><a href="#">Testimonials</a></li>
+            <li class="nav-links"><a href="#">Start Now</a></li>
+            <li class="button-container">
+              <a href="#"
+                ><span>Contact Us</span>
+                <img
+                  id="arrow"
+                  src="./public/images/right-arrow-white.svg"
+                  alt="arrow"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="header__section">
+        <div class="section__title">
+          <h1>We Are Fully Services Digital Agency</h1>
+          <p>
+            We are LeLand agency, our strategists will help you set an objective
+            and choose your tools, developing a plan that is custom built for
+            your business.
+          </p>
+        </div>
+
+        <div class="section__button-container">
+          <a href="#">
+            <span>Get Start Now</span>
+
+            <img
+              class="arrows"
+              id="arrow"
+              src="./public/images/right-arrow-white.svg"
+              alt="arrow"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="body__bg-image">
+        <img src="/public/images/illustration-1.png" alt="background" />
+      </section>
+    </div>
+
+    <main>
+      <section class="main__slider-container">
+        <div class="slider-container__slider">
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

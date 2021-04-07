@@ -1,0 +1,228 @@
+header {
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  background: $main-color;
+  z-index: 5;
+  @include flex-center;
+
+  .not-sticky {
+    display: none;
+  }
+
+  .sticky {
+    display: block;
+  }
+
+  nav {
+    width: 80%;
+    @include flex-space-between;
+
+    .logo-container {
+      @include flex-align-center;
+      width: 25%;
+    }
+
+    .nav-container {
+      width: 65%;
+      @include flex-space-between;
+      align-items: center;
+      font-size: 17px;
+
+      .nav-links {
+        a {
+          position: relative;
+          color: $base-color;
+          transition: 0.9s;
+
+          &:hover {
+            color: $link-color;
+          }
+        }
+      }
+
+      .button-container {
+        width: 182px;
+        height: 50px;
+        background: $base-color;
+        border-radius: 50px;
+        @include flex-center;
+
+        a {
+          position: relative;
+          width: 65%;
+          color: $main-color;
+          overflow: hidden;
+          @include flex-space-between;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 41px;
+            top: -160%;
+            background-image: url(/public/images/right-arrow.svg);
+            display: inline-block;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200%;
+            transition: 0.2s;
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+            transition: 0.3s;
+          }
+
+          span {
+            transition: 0.3s;
+          }
+          &:hover {
+            &::before {
+              transform: translateY(25px);
+            }
+
+            span,
+            .arrows {
+              transform: translateY(20px);
+            }
+          }
+        }
+      }
+    }
+
+    .nav-mobile {
+      display: none;
+
+      #menu-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-container {
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 7rem);
+        top: 7rem;
+        left: 0;
+        transform: translateX(100%);
+        background: #fff;
+        z-index: 999;
+        transition: 1s;
+        font-size: 19px;
+
+        li {
+          margin: 10px 0;
+        }
+
+        .li-active {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $main-color;
+          }
+        }
+
+        a {
+          color: $link-color;
+        }
+
+        .button-container {
+          background: $main-color;
+          a {
+            color: $base-color;
+            &::before {
+              background-image: url(/public/images/right-arrow-white.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sticky-header {
+  background: $base-color;
+
+  .not-sticky {
+    display: block;
+  }
+
+  .sticky {
+    display: none;
+  }
+
+  #white-logo {
+    display: none;
+  }
+
+  #dark-logo {
+    display: block;
+  }
+  .nav-container {
+    .nav-links {
+      a {
+        color: $link-color;
+        position: relative;
+        transition: 0.9s;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+
+    .button-container {
+      background-color: $main-color;
+      a {
+        color: $base-color;
+
+        &::before {
+          content: "";
+          background-image: url(/public/images/right-arrow-white.svg);
+        }
+      }
+
+      #arrow {
+        display: none;
+      }
+
+      #arrow-white {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $medium-device-width) {
+  header {
+    nav {
+      .desktop-nav {
+        display: none;
+      }
+
+      .nav-mobile {
+        display: block;
+
+        .nav-container {
+          @include flex-column;
+        }
+      }
+    }
+  }
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
