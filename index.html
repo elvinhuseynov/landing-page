@@ -71,12 +71,22 @@
           />
 
           <ul class="nav-container" id="hamburger-menu">
-            <li class="nav-links li-active"><a href="#">Home</a></li>
-            <li class="nav-links"><a href="#features">Features</a></li>
-            <li class="nav-links"><a href="#services">Services</a></li>
-            <li class="nav-links"><a href="#pricing">Pricing</a></li>
-            <li class="nav-links"><a href="#">Start Now</a></li>
-            <li class="button-container">
+            <li onclick="hamburgerMenuFunc()" class="nav-links li-active">
+              <a href="#">Home</a>
+            </li>
+            <li onclick="hamburgerMenuFunc()" class="nav-links">
+              <a href="#features">Features</a>
+            </li>
+            <li onclick="hamburgerMenuFunc()" class="nav-links">
+              <a href="#services">Services</a>
+            </li>
+            <li onclick="hamburgerMenuFunc()" class="nav-links">
+              <a href="#pricing-mobile">Pricing</a>
+            </li>
+            <li onclick="hamburgerMenuFunc()" class="nav-links">
+              <a href="#">Start Now</a>
+            </li>
+            <li onclick="hamburgerMenuFunc()" class="button-container">
               <a href="#"
                 ><span>Contact Us</span>
                 <img
@@ -221,7 +231,7 @@
       <section id="pricing" class="main__price_section">
         <div class="title">
           <h2>No Hidden Charges Choose Your Plan</h2>
-          <p>
+          <p id="pricing-mobile">
             This should be used to tell a story and let your users know a little
             more about your product or service. How can you benefit them?
           </p>
