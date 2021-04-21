@@ -20,7 +20,7 @@ body {
 }
 
 body header {
-  width: 100vw;
+  width: 100%;
   height: 7rem;
   position: fixed;
   background: #f47f7b;
@@ -557,6 +557,7 @@ body .main__clients_section .clients_section__container .counter-part .counter__
 }
 
 body .main__clients_section .clients_section__container .illustration_part img {
+  width: 100%;
   max-width: 30rem;
 }
 
