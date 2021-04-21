@@ -1,5 +1,5 @@
 header {
-  width: 100%;
+  width: 100vw;
   height: 7rem;
   position: fixed;
   background: $main-color;
@@ -102,7 +102,7 @@ header {
 
       .nav-container {
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 7rem);
         top: 7rem;
         left: 0;

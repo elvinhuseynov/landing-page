@@ -20,7 +20,7 @@ body {
 }
 
 body header {
-  width: 100%;
+  width: 100vw;
   height: 7rem;
   position: fixed;
   background: #f47f7b;
@@ -131,7 +131,7 @@ body header nav .nav-mobile #menu-icon {
 
 body header nav .nav-mobile .nav-container {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 7rem);
   top: 7rem;
   left: 0;
