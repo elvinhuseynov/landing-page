@@ -22,6 +22,6 @@ slideContainer.addEventListener("mousemove", (e) => {
   if (!mouseDown) return;
   e.preventDefault();
   const x = e.pageX - slideContainer.offsetLeft;
-  const walk = x - startX; //scroll-fast
+  const walk = x - startX; 
   slider.scrollLeft = scrollLeft - walk;
 });

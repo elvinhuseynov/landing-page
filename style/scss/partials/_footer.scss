@@ -1,0 +1,15 @@
+footer {
+  margin-top: 2rem;
+  height: 4rem;
+  @include flex-center;
+  background: #fef6f6;
+
+  p {
+    text-align: center;
+    color: rgb(110, 109, 109);
+
+    a {
+      color: $main-color;
+    }
+  }
+}

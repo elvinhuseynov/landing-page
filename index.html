@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
+    <!-- Style -->
     <link rel="stylesheet" href="style/css/main.css" />
+
+    <!-- Scripts -->
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -28,10 +33,9 @@
 
         <ul class="nav-container desktop-nav">
           <li class="nav-links"><a href="#">Home</a></li>
-          <li class="nav-links"><a href="#">Features</a></li>
-          <li class="nav-links"><a href="#">Services</a></li>
-          <li class="nav-links"><a href="#">Pricing</a></li>
-          <li class="nav-links"><a href="#">Testimonials</a></li>
+          <li class="nav-links"><a href="#features">Features</a></li>
+          <li class="nav-links"><a href="#services">Services</a></li>
+          <li class="nav-links"><a href="#pricing">Pricing</a></li>
           <li class="nav-links"><a href="#">Start Now</a></li>
           <li class="button-container">
             <a href="#"
@@ -119,10 +123,204 @@
 
     <main>
       <section class="main__slider-container">
-        <div class="slider-container__slider">
-          
+        <div class="slider__title">
+          <p>
+            Trusted by the world’s most innovative businesses – big and small
+          </p>
+        </div>
+        <div id="slider" class="slider-container__slider">
+          <img src="public/images/netflix.svg" alt="netflix" />
+          <img src="public/images/samsung.svg" alt="samsung" />
+          <img src="public/images/facebook.svg" alt="facebook" />
+          <img src="public/images/apple-big-logo.svg" alt="apple" />
+          <img src="public/images/microsoft.svg" alt="microsoft" />
+          <img src="public/images/search (1).svg" alt="google" />
+          <img src="public/images/netflix.svg" alt="netflix" />
+          <img src="public/images/samsung.svg" alt="samsung" />
+          <img src="public/images/facebook.svg" alt="facebook" />
+          <img src="public/images/apple-big-logo.svg" alt="apple" />
+          <img src="public/images/microsoft.svg" alt="microsoft" />
+          <img src="public/images/search (1).svg" alt="google" />
+        </div>
+      </section>
+
+      <section id="features" class="main__cards_section">
+        <div class="title">
+          <h2>We Help You To Start Your Project</h2>
+          <p>
+            This should be used to tell a story and let your users know a little
+            more about your product or service. How can you benefit them?
+          </p>
+        </div>
+        <div class="cards_container">
+          <a href="#" class="card">
+            <img src="public/images/analysis.svg" alt="analysis" />
+            <h3>Great Results</h3>
+            <p>
+              This should be used to tell a story and let your users know more
+              about your service. How can you benefit them?
+            </p>
+          </a>
+
+          <a href="#" class="card">
+            <img src="public/images/files.svg" alt="analysis" />
+            <h3>Page Builder</h3>
+            <p>
+              This should be used to tell a story and let your users know more
+              about your service. How can you benefit them?
+            </p>
+          </a>
+
+          <a href="#" class="card">
+            <img src="public/images/creativity.svg" alt="analysis" />
+            <h3>New Design</h3>
+            <p>
+              This should be used to tell a story and let your users know more
+              about your service. How can you benefit them?
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section id="services" class="main__clients_section">
+        <div class="clients_section__container">
+          <div class="counter-part container__parts">
+            <h2>Create A Beautiful Landing Page In Minute Not Weeks</h2>
+            <p>
+              This should be used to tell a story and let your users know a
+              little more about your product or service
+            </p>
+
+            <div class="counter__box">
+              <div class="box">
+                <img
+                  src="public/images/project-management.svg"
+                  alt="projects"
+                />
+                <div class="counter">
+                  <h2 id="project-counter">0</h2>
+                  <p>Projects</p>
+                </div>
+              </div>
+
+              <div class="box">
+                <img src="public/images/user.svg" alt="clients" />
+                <div class="counter">
+                  <h2 id="client-counter">0</h2>
+                  <p>Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="illustration_part container__parts">
+            <img src="public/images/illustration-2.png" alt="illustration-2" />
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="main__price_section">
+        <div class="title">
+          <h2>No Hidden Charges Choose Your Plan</h2>
+          <p>
+            This should be used to tell a story and let your users know a little
+            more about your product or service. How can you benefit them?
+          </p>
+        </div>
+
+        <div class="price_section__cards_container">
+          <div class="card">
+            <div class="price_container">
+              <img src="public/images/bg-pricing-dark.svg" alt="price" />
+              <div class="price-title">
+                <h2>Free</h2>
+                <h3>Basic</h3>
+              </div>
+            </div>
+
+            <ul class="info-container">
+              <li class="list-item">crm auto sync</li>
+              <li class="list-item">click to call back</li>
+              <li class="list-item through-line">track energy costs</li>
+              <li class="list-item through-line">predictive dialing</li>
+            </ul>
+
+            <div class="button-container button-container-dark">
+              <a href="#">
+                <span>Get Started</span>
+                <img
+                  class="arrows not-sticky"
+                  id="white-arrow"
+                  src="./public/images/right-arrow-white.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price_container">
+              <img src="public/images/bg-pricing-primary.svg" alt="price" />
+              <div class="price-title">
+                <h2 class="money-before-after">19</h2>
+                <h3>Start Up</h3>
+              </div>
+            </div>
+
+            <ul class="info-container">
+              <li class="list-item">crm auto sync</li>
+              <li class="list-item">click to call back</li>
+              <li class="list-item">track energy costs</li>
+              <li class="list-item through-line">predictive dialing</li>
+            </ul>
+
+            <div class="button-container button-container-light">
+              <a href="#">
+                <span>Get Started</span>
+                <img
+                  class="arrows not-sticky"
+                  id="white-arrow"
+                  src="./public/images/right-arrow-white.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price_container">
+              <img src="public/images/bg-pricing-dark.svg" alt="price" />
+              <div class="price-title">
+                <h2 class="money-before-after">29</h2>
+                <h3>Corporate</h3>
+              </div>
+            </div>
+
+            <ul class="info-container">
+              <li class="list-item">crm auto sync</li>
+              <li class="list-item">click to call back</li>
+              <li class="list-item">track energy costs</li>
+              <li class="list-item">predictive dialing</li>
+            </ul>
+
+            <div class="button-container button-container-dark">
+              <a href="#">
+                <span>Get Started</span>
+                <img
+                  class="arrows not-sticky"
+                  id="white-arrow"
+                  src="./public/images/right-arrow-white.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <p>2020 © <a href="#">Elvin Huseynov</a>. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

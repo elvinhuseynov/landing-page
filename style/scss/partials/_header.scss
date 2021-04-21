@@ -149,6 +149,7 @@ header {
 
 .sticky-header {
   background: $base-color;
+  box-shadow: 0 2px 2px -2px gray;
 
   .not-sticky {
     display: block;

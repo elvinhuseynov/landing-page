@@ -1,0 +1,111 @@
+.main__clients_section {
+  width: 100%;
+  position: relative;
+  background: #fef6f6;
+  @include flex-column;
+  align-items: center;
+
+  .clients_section__container {
+    width: 80%;
+    @include flex-space-between;
+    align-items: center;
+
+    .container__parts {
+      margin: 10rem 0;
+    }
+
+    .counter-part {
+      width: 40%;
+      @include flex-column;
+
+      h2 {
+        color: $link-color;
+        opacity: 0.9;
+        line-height: 2.5rem;
+        font-size: 1.7rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        opacity: 0.6;
+        line-height: 1.4rem;
+        font-size: 1rem;
+      }
+
+      .counter__box {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        img {
+          max-width: 3rem;
+        }
+
+        .box {
+          @include flex-space-between;
+          justify-content: space-around;
+          align-items: center;
+          background: $base-color;
+          width: 12rem;
+          height: 7rem;
+
+          .counter {
+            width: 54%;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .illustration_part {
+      img {
+        max-width: 30rem;
+      }
+    }
+  }
+
+  .clients_section__line {
+    width: 80%;
+    position: absolute;
+    top: 36rem;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main__clients_section {
+    .clients_section__container {
+      flex-direction: column;
+      text-align: center;
+
+      .counter-part {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .main__clients_section {
+    .clients_section__container {
+      .counter-part {
+        .counter__box {
+          flex-direction: column;
+          align-items: center;
+
+          .box{
+            width: 60%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .clients_section__line{
+      top: 41rem;
+    }
+  }
+}

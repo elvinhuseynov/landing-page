@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../partials/main__clients_section.scss"
+    ],
+    "names": [],
+    "file": "main__clients_section.css"
+}

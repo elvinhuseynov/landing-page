@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   li {
     list-style: none;
@@ -24,9 +25,13 @@ body {
   @import "partials/header";
   @import "partials/header__section";
   @import "partials/body_bg_image";
+  @import "partials/main__slider_container";
+  @import "partials/main__cards_section";
+  @import "partials/main__clients_section";
+  @import "partials/main__price_section";
+  @import "partials/footer";
 
   //ENVIROMENT
-  scroll-behavior: smooth;
 
   &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
